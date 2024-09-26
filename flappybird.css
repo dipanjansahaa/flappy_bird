@@ -1,0 +1,75 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px; /* Add space between score and dropdown */
+}
+
+.score-container {
+    font-size: 24px;
+    color: white;
+    background: linear-gradient(135deg, #6a5acd, #00bfff);
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.score-container:hover {
+    transform: scale(1.05);
+}
+
+#board {
+    background-image: url("./flappybirdbg.png");
+    margin-top: 20px;
+    border: 2px solid #333;
+}
+
+.dropdown-container {
+    position: relative;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-label {
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.dropdown {
+    padding: 10px;
+    font-size: 16px;
+    background: linear-gradient(135deg, #6a5acd, #00bfff); /* Selected option background */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.dropdown:hover {
+    background: linear-gradient(135deg, #00bfff, #6a5acd); /* Background on hover */
+}
+
+/* Styles for the dropdown menu when expanded */
+.dropdown:focus {
+    background-color: #333; /* Background when expanded */
+    color: white; /* Text color */
+}
+
+.dropdown option {
+    background-color: #333; /* Background color of options */
+    color: white; /* Text color of options */
+}

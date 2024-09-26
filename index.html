@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flappy Bird</title>
+        <link rel="stylesheet" href="flappybird.css">
+        <script src="flappybird.js"></script>
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="score-container">
+                <span id="score-label">Score: </span>
+                <span id="score">0</span>
+            </div>
+
+            <div class="dropdown-container">
+                <label for="difficulty" class="dropdown-label">Select Difficulty:</label>
+                <select id="difficulty" class="dropdown" onchange="changeDifficulty()">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </div>
+
+        <canvas id="board"></canvas>
+    </body>
+</html>
